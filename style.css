@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+body{
+    background-color: darksalmon;
+    color: rgb(255, 255, 255);
+    font-family: 'Playfair Display', serif;
+}
+header, footer, .inf-block {
+    background-color: rgb(159, 213, 221);
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+.inf-block{
+    padding: 0.5rem 1rem;
+    flex-basis: 300px;
+}
+@media (max-width: 600px) {
+    .main{
+        flex-direction: column;
+    }
+    .inf-block{
+        flex-basis: 0px;
+    }
+}
+header, footer {
+    padding: 0.5rem;
+}
+.center{
+    max-width: 900px;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+a{
+    color: blue;
+}
+footer p {
+    font-weight: 600;
+}
